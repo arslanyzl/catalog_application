@@ -6,7 +6,7 @@ Portfolio Project part of [Udacity Front-End Web Developer Nanodegree](https://w
 
 Built a fully responsive site using `HTML`, `CSS` & `Bootstrap` elements
 
-####Required Elements
+#### Required Elements
 
 The page at minimum includes all of the following:
 
