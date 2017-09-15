@@ -20,7 +20,7 @@ An application that provides a list of Soccer leagues within a variety of catego
 2. Create new project.
 3. Get App ID and App Secret.
 4. Go to the Client OAuth setting then activate "Client OAuth Login" and "Web OAuth Login".
-  to the "Valid OAuth redirect URIs" 
+  To the "Valid OAuth redirect URIs" paste "http://localhost:5000/"
 5. Clone or download this "catalog_application" directory.
 6. Open "fb_client_secrets.json" file then paste your App Id and Secret ID to the related place.
 7. Open "login.html" file in templates folder then paste your App Id related place.
