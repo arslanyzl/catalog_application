@@ -1,0 +1,18 @@
+{% extends "main.html" %}
+{% block content %}
+
+
+<h1>Are you sure you want to delete {{league.name}}? </h1>
+
+<form action="{{url_for('deleteLeague', league_id=league_id)}}" method = 'POST'>
+
+
+    <input type='submit' value='Delete'>
+
+    <a href="{{url_for('showLeagues', league_id = league_id ) }}">Cancel</a>
+
+
+    </form>
+
+
+{% endblock %}

@@ -1,0 +1,66 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+
+
+	<div class = 'pane'>
+		<div class= 'header'>
+		<h1>{{league.name}}</h1>
+	</div>
+
+
+<div class="row">
+    <div class = "col-md-12 flash">
+				{% with messages = get_flashed_messages() %}
+	{% if messages %}
+
+	<ul>
+	{% for message in messages %}
+  		<li><strong>{{message}}</strong></li>
+  	{% endfor %}
+	</ul>
+	{% endif %}
+  {% endwith %}
+
+    </div>
+</div>
+
+</br>
+
+		{% for i in items %}
+		<div class="row">
+			<div class="col-md-3 team-list tab">
+
+				<button class="tablinks" onclick="openTeam(event, '{{i.name}}')" id="defaultOpen">{{i.name}}</button>
+
+			</div>
+
+			<div id="{{i.name}}" class="col-md-9 tabcontent">
+				<h2>{{i.name}}  <strong> - Founded: {{i.founded}}</strong></h2>
+				<h3>{{i.description}}</h3>
+			</div>
+		</div>
+
+<script>
+function openTeam(evt, teamName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(teamName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+			{% endfor %}
+	</div>
+	</div>
+{% endblock %}

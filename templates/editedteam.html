@@ -1,0 +1,38 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+<div class="row banner main">
+    <div class="col-md-1"></div>
+    <div class="col-md-11 padding-none">
+        <h1> Edit Team </h1>
+
+        <form action="{{url_for('editTeam', league_id=league_id, team_id=i.id )}}" method = 'POST'>
+        </br>
+        <p>Name:</p>
+
+        <input type='text' size='30' name='name' placeholder='{{i.name}}'>
+
+        </br>
+        </br>
+
+        <p>Founded:</p>
+
+        <input type='text' size='30' name='founded' placeholder='{{i.founded}}'>
+
+        </br>
+        </br>
+
+        <p>About:</p>
+
+        <input type='text' size='30' name='description'  rows="3" placeholder="{{i.description}}" maxlength="250">
+
+        <input type='submit' value='Edit'>
+
+        <a href="{{url_for('soccerClub', league_id = league_id ) }}">Cancel</a>
+
+        </form>
+
+    </div>
+
+</div>
+{% endblock %}

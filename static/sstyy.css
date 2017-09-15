@@ -1,0 +1,231 @@
+* {
+	font-family: "Helvetica Neue Bold", Roboto, Helvetica, Arial, sans-serif;
+	font-weight: 700;
+}
+
+
+h1 {
+	font-family: "Helvetica Neue Light", Roboto, Helvetica, Arial, sans-serif;
+	font-size: 50px;
+	color: #51453B;
+	line-height: 60px;
+	font-weight: 300;
+}
+
+
+h2 {
+	font-size: 24px;
+	color: #42C3C9;
+	line-height: 26px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+
+h3 {
+	font-size: 18px;
+	color: #black;
+	line-height: 0px;
+}
+
+
+ p {
+ 	font-family: "Helvetica Neue", Roboto, Helvetica, Arial, sans-serif;
+ 	font-size: 16px;
+ 	color: #7B7573;
+ 	line-height: 24px;
+ 	font-weight: 400;
+ }
+
+
+ strong {
+ 	font-size: 16px;
+ 	color: #7B7573;
+ 	line-height: 24px;
+ }
+
+
+ a {
+ 	font-size: 14px;
+ 	color: #0093B9;
+ 	line-height: 17px;
+ }
+
+
+.padding-top {
+	padding-top: 30px;
+}
+
+
+.padding-bottom {
+	padding-bottom: 30px;
+}
+
+
+.margin-right {
+	margin-right: 30px;
+}
+
+
+.padding-none {
+	padding: 0;
+}
+
+
+.btn {
+	padding: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-color: #BBC3C9;
+	border-width: 2px;
+	color: #AFAFAF;;
+	width: 200px;
+}
+
+
+.btn:hover {
+	border-color: #42C3FF;
+}
+
+
+.glyphicon {
+	margin-right: 10px;
+}
+
+
+.top-league {
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+
+.top-league p {
+	margin-bottom: 0;
+	line-height: 16px;
+}
+
+
+.top-league a {
+	margin-bottom: 0;
+	line-height: 16px;
+	font-size: 16px;
+	color: #7B7573;
+	font-weight: 400;
+}
+
+
+.banner.main {
+	height: 150px;
+	background: url("/static/soccer.jpg");
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.banner.menu {
+	height: 150px;
+	background-color: #E1E17F;
+}
+
+
+.banner.profile {
+	height: 150px;
+	background-color: #A6E8EB;
+}
+
+
+.banner h1 {
+	margin: 45px 0;
+	color: #69C3FF;
+	text-shadow: 2px 2px #000000;
+	background-color: rgba(170, 170, 170, 0.75);
+	width: 400px;
+	margin-left: 10px;
+	margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+
+.team-list {
+	background-color: #AAAAAA;
+	padding-left: 20px;
+	padding-bottom: 5px;
+}
+
+
+.team-list:hover {
+	background-color: #cccccc;
+	padding-left: 20px;
+	padding-bottom: 5px;
+}
+
+
+ .league-list {
+ 	background-color: #F0F0F0;
+ 	padding: 20px;
+}
+
+
+ .league-list:hover {
+ 	background-color: #f0f0ff;
+ 	padding: 20px;
+}
+
+
+.team-club {
+	background: #F0F0F0;
+	padding: 20px;
+	margin: 20px;
+	margin-left: -12px;
+	width: 102%;
+}
+
+
+.flash {
+	background-color: #E1E1FF;
+	text-decoration: none;
+
+}
+
+
+.flash li {
+	list-style-type: none;
+	text-align: center;
+	height: 10px;
+
+}
+
+
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 15px 12px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+
+.tab button.active {
+    background-color: #aaa;
+}
+
+
+.tabcontent {
+    float: left;
+    padding: 0px 30px;
+    border: 1px solid #ccc;
+    border-left: none;
+}

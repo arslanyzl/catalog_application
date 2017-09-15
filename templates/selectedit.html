@@ -1,0 +1,35 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+
+
+<body class='body'>
+
+<div class = 'pane'>
+    <div class= 'header'>
+        </br>
+        <h1>{{league.name}}</h1>
+        </br>
+        <h2>Select Team to Edit</h2>
+    </div>
+
+
+
+</div>
+
+
+        {% for i in items %}
+
+<div class= 'row'>
+    <div class="col-md-3 team-list tab">
+        <a href="{{url_for('editTeam', league_id = league.id, team_id=i.id ) }}">
+            <button class = 'name'><h3>{{i.name}}</h3></button></a>
+    </div>
+</div>
+
+
+            {% endfor %}
+</div>
+</body>
+
+{% endblock %}

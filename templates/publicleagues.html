@@ -1,0 +1,48 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10 banner main">
+            <h1>Soccer Leagues</h1>
+            </br>
+        </div>
+    </div>
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class = 'col-md-10 flash'>
+              {% with messages = get_flashed_messages() %}
+      {% if messages %}
+
+        <ul>
+        {% for message in messages %}
+            <li> <strong> {{ message }} </strong> </li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+    {% endwith %}
+    </div>
+</div>
+
+
+    </br>
+    </br>
+    <div class="row padding-top padding-bottom">
+        <div class="col-md-1"></div>
+        <div class="col-md-10 padding-none">
+
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    {% for league in leagues %}
+        <a href = "{{url_for('soccerClub', league_id = league.id)}}">
+            <div class="row">
+                <div class="col-md-1"></div>
+                    <div class="col-md-10 league-list">
+                        <h2>{{league.name}}</h2>
+                    </div>
+                <div class="col-md-1"></div>
+            </div>
+        </a>
+    {% endfor %}
+{% endblock %}
